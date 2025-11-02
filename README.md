@@ -1,6 +1,8 @@
 # SE-Lab-05
 Repository containing all the materials for Software Engineering Lab 5.
 
+**Known Issues Table**
+
 | Issue | Type | Line(s) | Description | Fix Approach |
 | :--- | :--- | :--- | :--- | :--- |
 | **Use of eval**<br>(arbitrary code execution) | Security | 59 | `eval("print('eval used')")` can execute arbitrary code (Bandit B307, pylint W0123) | Remove `eval`;<br>implement explicit logic or use `ast.literal_eval` for literal parsing |
@@ -11,7 +13,7 @@ Repository containing all the materials for Software Engineering Lab 5.
 | **Unsafe file handling**<br>(no context manager, no encoding) | Reliability /<br>Correctness | 26-34 | `open()` used without `with` and without `encoding`; manual `close` and `json.loads`/`read` can fail (pylint W1514, R1732) | Use `with open(file, mode, encoding="utf-8") as f` and `json.load()`/`json.dump()`;<br>handle I/O errors |
 
 
-Q&A:
+**Q&A:**
 
 1.	Which issues were the easiest to fix, and which were the hardest? Why?
    
@@ -25,9 +27,9 @@ Yes. The missing docstrings warnings (C0114/C0116) is an example. They are styli
 
 3.	How would you integrate static analysis tools into your actual software development workflow? Consider continuous integration (CI) or local development practices.
    
-Local pre-commit hooks: Run flake8/pylint/bandit in pre-commit to block/flag commits with critical issues.
+a) Local pre-commit hooks: Run flake8/pylint/bandit in pre-commit to block/flag commits with critical issues.
 
-CI pipeline: Run bandit + flake8 + pylint (or a curated subset) in CI jobs; fail builds on security or high-severity findings, and report warnings for style issues.
+b) CI pipeline: Run bandit + flake8 + pylint (or a curated subset) in CI jobs; fail builds on security or high-severity findings, and report warnings for style issues.
 
 4.	What tangible improvements did you observe in the code quality, readability, or potential robustness after applying the fixes?
 
