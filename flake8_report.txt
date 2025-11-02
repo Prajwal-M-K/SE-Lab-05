@@ -1,0 +1,21 @@
+inventory_system.py:7:1: E302 expected 2 blank lines, found 1
+inventory_system.py:8:5: E265 block comment should start with '# '
+inventory_system.py:15:1: W293 blank line contains whitespace
+inventory_system.py:16:43: E231 missing whitespace after ','
+inventory_system.py:18:1: W293 blank line contains whitespace
+inventory_system.py:19:1: E302 expected 2 blank lines, found 1
+inventory_system.py:20:5: E265 block comment should start with '# '
+inventory_system.py:23:1: W293 blank line contains whitespace
+inventory_system.py:31:1: E302 expected 2 blank lines, found 1
+inventory_system.py:32:5: E265 block comment should start with '# '
+inventory_system.py:33:31: E231 missing whitespace after ','
+inventory_system.py:35:1: E302 expected 2 blank lines, found 1
+inventory_system.py:36:5: E265 block comment should start with '# '
+inventory_system.py:40:1: E302 expected 2 blank lines, found 1
+inventory_system.py:41:5: E265 block comment should start with '# '
+inventory_system.py:43:32: E231 missing whitespace after ','
+inventory_system.py:45:1: E302 expected 2 blank lines, found 1
+inventory_system.py:50:1: E302 expected 2 blank lines, found 1
+inventory_system.py:57:1: E302 expected 2 blank lines, found 1
+inventory_system.py:73:5: E265 block comment should start with '# '
+inventory_system.py:76:1: E305 expected 2 blank lines after class or function definition, found 1
